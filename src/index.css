@@ -17,6 +17,7 @@
 
   /* Fonts */
   --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-editorial: "DM Serif Display", Georgia, serif;
   --font-sans:    "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-mono:    "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-code:    "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
@@ -76,6 +77,19 @@
   100% { opacity: 0; }
 }
 
+.hero-greeting {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.96;
+}
+
+.hero-atmosphere {
+  background:
+    radial-gradient(ellipse 46% 70% at 78% 42%, rgba(6, 78, 59, 0.12), transparent 100%),
+    linear-gradient(118deg, rgba(248, 231, 201, 0.1) 16%, rgba(6, 78, 59, 0.035) 100%);
+}
+
 .site-splash {
   position: fixed;
   inset: 0;
@@ -122,6 +136,10 @@
 
   body {
     background-color: var(--color-offwhite);
+    background-image:
+      radial-gradient(ellipse 70% 24% at 0% 0%, rgba(6, 78, 59, 0.055), transparent 100%),
+      radial-gradient(ellipse 60% 30% at 100% 100%, rgba(6, 78, 59, 0.04), transparent 100%);
+    background-attachment: fixed;
     color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -171,6 +189,16 @@
     position: relative;
     scroll-margin-top: 6rem;
     padding-block: 5rem;
+  }
+  .section:not(#certifications) {
+    background-image:
+      radial-gradient(ellipse 78% 68% at 100% 0%, rgba(6, 78, 59, 0.065), transparent 100%),
+      linear-gradient(118deg, rgba(248, 231, 201, 0.24), transparent 56%, rgba(6, 78, 59, 0.045));
+  }
+  .section:not(#certifications):nth-of-type(even) {
+    background-image:
+      radial-gradient(ellipse 78% 68% at 0% 100%, rgba(6, 78, 59, 0.065), transparent 100%),
+      linear-gradient(242deg, rgba(248, 231, 201, 0.24), transparent 56%, rgba(6, 78, 59, 0.045));
   }
   @media (min-width: 640px) {
     .section { padding-block: 6rem; }
