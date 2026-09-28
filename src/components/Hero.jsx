@@ -12,7 +12,7 @@ function HeroVisual() {
       <img
         src={portrait}
         alt="Sathish Palanisamy, Full Stack Developer"
-        className="relative z-20 block h-auto w-full object-contain drop-shadow-[0_24px_36px_rgba(6,78,59,0.14)]"
+        className="relative z-20 block h-auto w-full object-contain drop-shadow-[0_24px_36px_rgba(53,65,94,0.14)]"
         draggable="false"
       />
     </div>

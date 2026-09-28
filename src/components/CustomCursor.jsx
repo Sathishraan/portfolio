@@ -53,7 +53,7 @@ export default function CustomCursor() {
 
   const size = mode === 'view' ? 88 : mode === 'hover' ? 56 : 14;
   const isLabel = mode === 'view';
-  const cursorColor = mode === 'inverse' ? 'rgba(248,231,201,1)' : 'rgba(6,78,59,1)';
+  const cursorColor = mode === 'inverse' ? 'rgba(255,241,219,1)' : 'rgba(239,90,111,1)';
 
   return (
     <motion.div

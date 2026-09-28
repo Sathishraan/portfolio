@@ -50,7 +50,7 @@ const TECH_COLORS = {
   SQL: '#ffb703',
   'VS Code': '#007acc',
   'Cursor AI': '#7c3aed',
-  default: '#064E3B',
+  default: '#EF5A6F',
 };
 
 function BrandGlyph({ name }) {

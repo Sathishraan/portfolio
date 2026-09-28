@@ -6,29 +6,29 @@
    ========================================================= */
 @theme {
   /* Colors */
-  --color-offwhite:   #F8E7C9;
+  --color-offwhite:   #FFF1DB;
   --color-white:      var(--color-offwhite);
-  --color-ink:        #064E3B;
-  --color-accent:     #064E3B;
-  --color-accent-dark:#064E3B;
-  --color-accent-soft:rgba(6, 78, 59, 0.1);
-  --color-muted:      rgba(6, 78, 59, 0.58);
-  --color-line:       rgba(6, 78, 59, 0.16);
+  --color-ink:        #35415E;
+  --color-accent:     #EF5A6F;
+  --color-accent-dark:#A8394A;
+  --color-accent-soft:rgba(239, 90, 111, 0.14);
+  --color-muted:      rgba(53, 65, 94, 0.68);
+  --color-line:       rgba(83, 100, 147, 0.28);
 
   /* Fonts */
-  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-editorial: "DM Serif Display", Georgia, serif;
-  --font-sans:    "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-mono:    "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-code:    "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-editorial: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-sans:    "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-code:    "Manrope", ui-sans-serif, system-ui, sans-serif;
 
   /* Border radius */
   --radius-4xl: 2rem;
   --radius-5xl: 2.5rem;
 
   /* Shadows */
-  --shadow-soft: 0 20px 60px -30px rgba(6, 78, 59, 0.22);
-  --shadow-lift: 0 30px 80px -40px rgba(6, 78, 59, 0.3);
+  --shadow-soft: 0 20px 60px -30px rgba(53, 65, 94, 0.22);
+  --shadow-lift: 0 30px 80px -40px rgba(53, 65, 94, 0.3);
 
   /* Container (this powers `max-w-shell`) */
   --container-shell: 1400px;
@@ -86,8 +86,8 @@
 
 .hero-atmosphere {
   background:
-    radial-gradient(ellipse 46% 70% at 78% 42%, rgba(6, 78, 59, 0.12), transparent 100%),
-    linear-gradient(118deg, rgba(248, 231, 201, 0.1) 16%, rgba(6, 78, 59, 0.035) 100%);
+    radial-gradient(ellipse 46% 70% at 78% 42%, rgba(239, 90, 111, 0.16), transparent 100%),
+    linear-gradient(118deg, rgba(255, 241, 219, 0.1) 16%, rgba(212, 189, 172, 0.24) 100%);
 }
 
 .site-splash {
@@ -120,7 +120,7 @@
 .site-splash__panel--bottom {
   bottom: 0;
   z-index: 2;
-  border-top: 1px solid rgba(6, 78, 59, 0.18);
+  border-top: 1px solid rgba(83, 100, 147, 0.28);
   background: var(--color-offwhite);
   animation-name: splash-bottom-panel;
 }
@@ -137,8 +137,8 @@
   body {
     background-color: var(--color-offwhite);
     background-image:
-      radial-gradient(ellipse 70% 24% at 0% 0%, rgba(6, 78, 59, 0.055), transparent 100%),
-      radial-gradient(ellipse 60% 30% at 100% 100%, rgba(6, 78, 59, 0.04), transparent 100%);
+      radial-gradient(ellipse 70% 24% at 0% 0%, rgba(239, 90, 111, 0.1), transparent 100%),
+      radial-gradient(ellipse 60% 30% at 100% 100%, rgba(212, 189, 172, 0.34), transparent 100%);
     background-attachment: fixed;
     color: var(--color-ink);
     font-family: var(--font-sans);
@@ -161,7 +161,7 @@
   ::-webkit-scrollbar { width: 10px; height: 10px; }
   ::-webkit-scrollbar-track { background: var(--color-offwhite); }
   ::-webkit-scrollbar-thumb {
-    background: rgba(6, 78, 59, 0.24);
+    background: rgba(83, 100, 147, 0.42);
     border-radius: 9999px;
     border: 2px solid var(--color-offwhite);
   }
@@ -192,13 +192,13 @@
   }
   .section:not(#certifications) {
     background-image:
-      radial-gradient(ellipse 78% 68% at 100% 0%, rgba(6, 78, 59, 0.065), transparent 100%),
-      linear-gradient(118deg, rgba(248, 231, 201, 0.24), transparent 56%, rgba(6, 78, 59, 0.045));
+      radial-gradient(ellipse 78% 68% at 100% 0%, rgba(212, 189, 172, 0.3), transparent 100%),
+      linear-gradient(118deg, rgba(255, 241, 219, 0.3), transparent 56%, rgba(239, 90, 111, 0.08));
   }
   .section:not(#certifications):nth-of-type(even) {
     background-image:
-      radial-gradient(ellipse 78% 68% at 0% 100%, rgba(6, 78, 59, 0.065), transparent 100%),
-      linear-gradient(242deg, rgba(248, 231, 201, 0.24), transparent 56%, rgba(6, 78, 59, 0.045));
+      radial-gradient(ellipse 78% 68% at 0% 100%, rgba(212, 189, 172, 0.34), transparent 100%),
+      linear-gradient(242deg, rgba(255, 241, 219, 0.3), transparent 56%, rgba(239, 90, 111, 0.08));
   }
   @media (min-width: 640px) {
     .section { padding-block: 6rem; }
@@ -212,7 +212,7 @@
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.28em;
-    color: var(--color-accent);
+    color: var(--color-ink);
   }
   @media (min-width: 640px) {
     .eyebrow { font-size: 12px; }
@@ -240,7 +240,7 @@
     justify-content: center;
     gap: 0.5rem;
     border-radius: 9999px;
-    border: 1px solid rgba(6, 78, 59, 0.15);
+    border: 1px solid rgba(83, 100, 147, 0.32);
     padding: 0.875rem 1.5rem;
     font-family: var(--font-mono);
     font-size: 11px;
@@ -254,8 +254,8 @@
     color: var(--color-offwhite);
   }
   .btn-primary:hover {
-    background-color: var(--color-accent);
-    border-color: var(--color-accent);
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
   }
   .btn-ghost {
     background-color: transparent;
@@ -268,8 +268,8 @@
 
   .card {
     border-radius: var(--radius-4xl);
-    border: 1px solid rgba(6, 78, 59, 0.1);
-    background-color: rgba(248, 231, 201, 0.6);
+    border: 1px solid rgba(83, 100, 147, 0.2);
+    background-color: rgba(212, 189, 172, 0.28);
     backdrop-filter: blur(4px);
   }
 
@@ -277,14 +277,14 @@
     display: inline-flex;
     align-items: center;
     border-radius: 9999px;
-    border: 1px solid rgba(6, 78, 59, 0.1);
-    background-color: rgba(248, 231, 201, 0.7);
+    border: 1px solid rgba(83, 100, 147, 0.2);
+    background-color: rgba(239, 90, 111, 0.12);
     padding: 0.25rem 0.75rem;
     font-family: var(--font-mono);
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.14em;
-    color: rgba(6, 78, 59, 0.7);
+    color: var(--color-ink);
   }
 
   .skip-link {
@@ -318,7 +318,7 @@
   .anim-spin-slow-rev { animation: orbit-rev 48s linear infinite; }
 
   .noise {
-    background-image: radial-gradient(rgba(6, 78, 59, 0.045) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(83, 100, 147, 0.12) 1px, transparent 1px);
     background-size: 22px 22px;
   }
 
